@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: black;
+    @media (prefers-color-scheme: dark) {
+        color: white;
+    }
+}
+
+body {
+    background-color: white;
+    background-position: center;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    justify-content: center;
+    margin: 0px;
+    overflow-x: hidden;
+    @media (prefers-color-scheme: dark) {
+        background-color: #202124;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.non-selectable {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.margin-top-2em {
+    margin-top: 2em;
+}
+
+.bigtext {
+    font-size: xx-large;
+}
+
+.account {
+    border-radius: 1em;
+    box-shadow: 0px 0px 1em #0000008e;
+    display: flex;
+    max-width: 10.5em;
+    padding: 0.5em;
+    transform: scale(1);
+    transition: transform .5s ease-in-out;
+}
+
+.account:hover {
+    transform: scale(1.1);
+}
+
+#steam-accounts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
